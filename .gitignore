@@ -1,0 +1,61 @@
+# ========================
+# Virtual Environment
+# ========================
+.venv/
+venv/
+.env/
+env/
+
+# ========================
+# Python Cache
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ========================
+# Node.js / Frontend
+# ========================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+.eslintcache
+
+# ========================
+# YOLOv8 Model Weights
+# ========================
+*.pt
+*.pth
+*.onnx
+*.engine
+model/runs/
+runs/
+
+# ========================
+# Dataset
+# ========================
+dataset/images/
+dataset/labels/
+dataset/videos/
+dataset/coco128/
+*.zip
+*.tar.gz
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Logs & Reports
+# ========================
+*.log
+*.csv
+!Project_Report.md
+!Performance_Results.csv
