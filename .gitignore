@@ -27,6 +27,7 @@ frontend/.env.local
 
 # ========================
 # YOLOv8 Model Weights
+# (too large for GitHub)
 # ========================
 *.pt
 *.pth
@@ -37,6 +38,7 @@ runs/
 
 # ========================
 # Dataset
+# (too large for GitHub)
 # ========================
 dataset/images/
 dataset/labels/
