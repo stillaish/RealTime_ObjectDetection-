@@ -21,8 +21,8 @@ app.add_middleware(
 from utils.config import MODEL_PATH, API_HOST, API_PORT
 
 # Load YOLO Model
-# Upgraded to yolov8m.pt (Medium) for better detection of pens, phones, etc.
 model = YOLO(MODEL_PATH) 
+model.to('cpu') # Ensure it runs on CPU to save RAM
 
 class FrameData(BaseModel):
     image: str # Base64 string
