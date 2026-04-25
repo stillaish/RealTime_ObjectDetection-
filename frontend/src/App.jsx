@@ -25,7 +25,8 @@ function App() {
       try {
         isProcessing.current = true;
         const start = Date.now();
-        const response = await axios.post('http://localhost:8000/detect', { image: frame });
+        const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+        const response = await axios.post(`${apiBaseUrl}/detect`, { image: frame });
         setLatency(Date.now() - start);
         setDetections(response.data.detections || []);
       } catch (err) {
